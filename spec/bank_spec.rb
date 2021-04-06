@@ -2,7 +2,11 @@
 require 'bank.rb'
 
 describe Bank do
-  it "it respond to #create" do
-    expect(Bank.new).to respond_to(:create)
+  let(:bank) { Bank.new }
+
+  describe '#create' do
+  it "responds to #create" do
+    expect(bank.create).to be_an_instance_of(Bank)
   end
+end
 end
