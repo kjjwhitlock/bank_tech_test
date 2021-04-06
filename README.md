@@ -1,8 +1,19 @@
 # BankTechTest
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/bank_tech_test`. To experiment with that code, run `bin/console` for an interactive prompt.
+## User Stories
 
-TODO: Delete this and the text above, and describe your gem
+As a user with a bank account,
+So that I can store my money,
+I would like to be able to make deposits.
+
+As a user with a bank account,
+So that I can access my money,
+I would like to be able to make withdrawals.
+
+As a user with a bank account,
+So that I can view my transactions and balance,
+I would like to be able to print my bank statement. 
+
 
 ## Installation
 
