@@ -1,3 +1,5 @@
+require 'date'
+
 class Bank
   attr_reader :deposits, :withdrawals, :balance
   def initialize(user)
@@ -7,16 +9,16 @@ class Bank
   end
 
   def deposit(amount)
-    @deposits << amount
-    update_balance
+    @deposits << {date: date, deposit: amount, withdraw: ""}
+    @balance += amount
   end
 
   def withdraw(amount)
-    @withdrawals << amount
-    update_balance
+    @withdrawals << {date: date, deposit: "", withdraw: amount}
+    @balance -= amount
   end
-  
-  def update_balance
-      @balance = (@deposits.sum - @withdrawals.sum)
+
+  def date
+    Time.now.strftime("%d/%m/%Y")
   end
 end
