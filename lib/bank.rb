@@ -8,16 +8,20 @@ class Bank
   end
 
   def deposit(amount)
-    @transactions << {date: date, deposit: amount, withdraw: ""}
     @balance += amount
+    @transactions << {date: date, deposit: amount, withdraw: "", balance: @balance}
   end
 
   def withdraw(amount)
-    @transactions << {date: date, deposit: "", withdraw: amount}
     @balance -= amount
+    @transactions << {date: date, deposit: "", withdraw: amount, balance: @balance}
   end
 
   def date
   Time.now.strftime("%d/%m/%Y")
+  end
+
+  def print_statement
+  p @transactions
   end
 end
