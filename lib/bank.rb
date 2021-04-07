@@ -8,14 +8,14 @@ class Bank
     @balance = 0
   end
 
-  def deposit(amount)
+  def credit(amount)
     add_to_balance(amount)
-    @transactions << {date: date, deposit: amount, withdraw: "", balance: @balance}
+    @transactions << {date: date, deposit: amount, withdraw: "", balance: "#{'%.2f' % @balance}" }
   end
 
-  def withdraw(amount)
+  def debit(amount)
     subtract_from_balance(amount)
-    @transactions << {date: date, deposit: "", withdraw: amount, balance: @balance}
+    @transactions << {date: date, deposit: "", withdraw: amount, balance: "#{'%.2f' % @balance}"}
   end
 
   def date

@@ -12,21 +12,21 @@ describe Bank do
     end
   end
 
-  describe '#deposit' do
+  describe '#credit' do
     it "increases bank balance" do
-      expect { bank.deposit(500) }.to change { bank.balance }.by(500)
+      expect { bank.credit(500) }.to change { bank.balance }.by(500)
     end
   end
 
-  describe '#withdraw' do
+  describe '#debit' do
     it "reduces bank balance" do
-      expect { bank.withdraw(200)}.to change { bank.balance }.by(-200)
+      expect { bank.debit(200)}.to change { bank.balance }.by(-200)
     end
   end
 
-  describe 'withdrawals' do
+  describe 'transactions' do
     it 'stores dates of transactions' do
-      bank.deposit(200)
+      bank.credit(200)
       expect(bank.transactions[0]).to have_key(:date)
     end
   end
