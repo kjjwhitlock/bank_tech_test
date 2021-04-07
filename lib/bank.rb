@@ -1,4 +1,5 @@
 require 'date'
+require 'hirb'
 
 class Bank
   attr_reader :transactions, :balance
@@ -22,7 +23,7 @@ class Bank
   end
 
   def print_statement
-  p @transactions
+  puts Hirb::Helpers::AutoTable.render(@transactions, fields:[:date,:withdraw,:deposit,:balance])
   end
 
   def subtract_from_balance(amount)
