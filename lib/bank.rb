@@ -8,12 +8,12 @@ class Bank
   end
 
   def deposit(amount)
-    @balance += amount
+    add_to_balance(amount)
     @transactions << {date: date, deposit: amount, withdraw: "", balance: @balance}
   end
 
   def withdraw(amount)
-    @balance -= amount
+    subtract_from_balance(amount)
     @transactions << {date: date, deposit: "", withdraw: amount, balance: @balance}
   end
 
@@ -23,5 +23,13 @@ class Bank
 
   def print_statement
   p @transactions
+  end
+
+  def subtract_from_balance(amount)
+    @balance -= amount
+  end
+
+  def add_to_balance(amount)
+    @balance += amount
   end
 end
