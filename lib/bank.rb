@@ -17,8 +17,7 @@ class Bank
     @withdrawals << {date: date, deposit: "", withdraw: amount}
     @balance -= amount
   end
-
   def date
-    Time.now.strftime("%d/%m/%Y")
+  Time.now.strftime("%d/%m/%Y")
   end
 end

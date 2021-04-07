@@ -23,4 +23,11 @@ describe Bank do
       expect { bank.withdraw(200)}.to change { bank.balance }.by(-200)
     end
   end
+
+  describe 'withdrawals' do
+    it 'stores dates of transactions' do
+      bank.deposit(200)
+      expect(bank.deposits[0]).to have_key(:date)
+    end
+  end
 end
