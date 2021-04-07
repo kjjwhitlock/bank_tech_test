@@ -1,6 +1,8 @@
 class Bank
+  attr_reader :deposits, :withdrawals, :balance
   def initialize(user)
     @deposits = []
-    @balance = @deposits.sum
+    @withdrawals = []
+    @balance = 0
   end
-end
+end 
