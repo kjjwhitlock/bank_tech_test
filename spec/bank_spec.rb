@@ -27,7 +27,7 @@ describe Bank do
   describe 'withdrawals' do
     it 'stores dates of transactions' do
       bank.deposit(200)
-      expect(bank.deposits[0]).to have_key(:date)
+      expect(bank.transactions[0]).to have_key(:date)
     end
   end
 end
