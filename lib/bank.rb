@@ -5,4 +5,4 @@ class Bank
     @withdrawals = []
     @balance = 0
   end
-end 
+end
