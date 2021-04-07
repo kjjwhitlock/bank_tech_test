@@ -1,5 +1,8 @@
 class Bank
-  def create
-    Bank.new
+  attr_reader :deposits, :withdrawals, :balance
+  def initialize(user)
+    @deposits = []
+    @withdrawals = []
+    @balance = 0
   end
-end
+end 
