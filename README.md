@@ -1,5 +1,24 @@
 # BankTechTest
 
+## Project Description
+
+Makers 'Bank' tech test written in Ruby.
+
+## Acceptance Criteria
+
+**Given** a client makes a deposit of 1000 on 10-01-2012  
+**And** a deposit of 2000 on 13-01-2012  
+**And** a withdrawal of 500 on 14-01-2012  
+**When** she prints her bank statement  
+**Then** she would see
+
+```
+date || credit || debit || balance
+14/01/2012 || || 500.00 || 2500.00
+13/01/2012 || 2000.00 || || 3000.00
+10/01/2012 || 1000.00 || || 1000.00
+```
+
 ## User Stories
 
 As a user with a bank account,
@@ -17,23 +36,18 @@ I would like to be able to print my bank statement.
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'bank_tech_test'
-```
-
-And then execute:
+Execute:
 
     $ bundle install
 
-Or install it yourself as:
+To run rubocop: 
 
-    $ gem install bank_tech_test
+    $ bundle exec rubocop
 
-## Usage
+## Design choices
 
-TODO: Write usage instructions here
+- Added a 'user' class, this enables the bank account to be assigned to the 'user' in my user story. 
+- Used the gem 'HIRB' to enable a more simple and clear table
 
 ## Development
 
@@ -48,7 +62,3 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/[USERN
 ## License
 
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
-## Code of Conduct
-
-Everyone interacting in the BankTechTest project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/bank_tech_test/blob/master/CODE_OF_CONDUCT.md).
