@@ -21,16 +21,16 @@ date || credit || debit || balance
 
 ## User Stories
 
-As a user with a bank account,
-So that I can store my money,
+As a user with a bank account,<br>
+So that I can store my money,<br>
 I would like to be able to make deposits.
 
-As a user with a bank account,
-So that I can access my money,
+As a user with a bank account,<br>
+So that I can access my money,<br>
 I would like to be able to make withdrawals.
 
-As a user with a bank account,
-So that I can view my transactions and balance,
+As a user with a bank account,<br>
+So that I can view my transactions and balance,<br>
 I would like to be able to print my bank statement. 
 
 
