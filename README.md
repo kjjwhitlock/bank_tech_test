@@ -36,7 +36,9 @@ I would like to be able to make withdrawals.
 
 As a user with a bank account,<br>
 So that I can view my transactions and balance,<br>
-I would like to be able to print my bank statement. 
+I would like to be able to print my bank statement.
+
+## Screenshots
 
 
 ## Installation
@@ -45,12 +47,11 @@ Execute:
 
     $ bundle install
 
-To run rubocop: 
+To run rubocop:
 
     $ bundle exec rubocop
 
 ## Design choices
 
-- Added a 'user' class, this enables the bank account to be assigned to the 'user' in my user story. 
+- Added a 'user' class, this enables the bank account to be assigned to the 'user' in my user story.
 - Used the gem 'HIRB' to enable a more simple and clear table.
-

@@ -4,7 +4,7 @@ require "date"
 require "hirb"
 
 class Bank
-  attr_reader :balance
+  attr_reader :balance, :transactions
 
   def initialize
     @transactions = []
@@ -13,18 +13,18 @@ class Bank
 
   def credit(amount)
     add_to_balance(amount)
-    @transactions << { date: date, deposit: ("%.2f" % amount).to_s, withdraw: "",
+    @transactions << { date: date, deposit: ("%.2f" % amount).to_s, withdraw: "      ",
                        balance: format("%.2f", @balance).to_s }
   end
 
   def debit(amount)
     subtract_from_balance(amount)
-    @transactions << { date: date, deposit: "", withdraw: ("%.2f" % amount).to_s,
+    @transactions << { date: date, deposit: "      ", withdraw: ("%.2f" % amount).to_s,
                        balance: format("%.2f", @balance).to_s }
   end
 
   def date
-    Time.now.strftime("%d/%m/%Y")
+  Time.now.strftime("%d/%m/%Y")
   end
 
   def print_statement
