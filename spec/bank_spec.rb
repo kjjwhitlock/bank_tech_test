@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require "bank"
+require "statement"
 
 describe Bank do
   let(:bank) { Bank.new }
@@ -38,4 +39,13 @@ describe Bank do
       expect(bank.print_first_entry).to have_key(:date)
     end
   end
+    describe "acceptance criteria feature test" do
+      it "is a passing test" do
+        bank.credit(1000)
+        bank.credit(2000)
+        bank.debit(500)
+        bank.print_statement
+      expect(bank.print_statement).to eq()
+      end
+    end
 end
