@@ -1,11 +1,9 @@
 # frozen_string_literal: true
 
 require "bank"
-require "user"
 
 describe Bank do
-  let(:user) { User.new }
-  let(:bank) { Bank.new(user) }
+  let(:bank) { Bank.new }
 
   describe "bank exists" do
     it "creates a new bank account" do
@@ -32,12 +30,12 @@ describe Bank do
 
     it "stores credit date in transaction history" do
       bank.credit(200)
-      expect(bank.transactions[0]).to have_key(:date)
+      expect(bank.print_first_entry).to have_key(:date)
     end
 
     it "stores debit date in transaction history" do
       bank.debit(200)
-      expect(bank.transactions[0]).to have_key(:date)
+      expect(bank.print_first_entry).to have_key(:date)
     end
   end
 end
