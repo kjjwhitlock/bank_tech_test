@@ -19,6 +19,11 @@ date || credit || debit || balance
 10/01/2012 || 1000.00 || || 1000.00
 ```
 
+## Screenshot
+
+<img width="492" alt="Screenshot 2021-04-10 at 12 23 44" src="https://user-images.githubusercontent.com/76783075/114268164-a6d6d100-99f7-11eb-9207-6ca44cf600c6.png">
+
+
 ## User Stories
 
 As a user with a bank account,<br>
