@@ -24,7 +24,7 @@ describe Bank do
     end
   end
 
-  describe "saves date" do
+  describe "saves the date" do
     it "returns the current date" do
       expect(bank.date).to eq(Time.now.strftime("%d/%m/%Y"))
     end
@@ -39,15 +39,4 @@ describe Bank do
       expect(bank.print_first_entry).to have_key(:date)
     end
   end
-
-    describe "acceptance criteria feature test" do
-      it "is a passing test" do
-        expect do
-        bank.credit(1000)
-        bank.credit(2000)
-        bank.debit(500)
-        expect (bank.print_statement).to include("1000", "2000", "500")
-      end
-    end
-end
 end
