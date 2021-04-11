@@ -8,4 +8,4 @@ gem "rubocop", "~> 1.7"
 
 gem "hirb", "~> 0.7.3"
 
-gem "simplecov", require: false, group: :test
+gem 'coveralls', require: false

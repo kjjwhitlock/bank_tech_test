@@ -18,7 +18,7 @@ describe PrintStatement do
 end
 
 describe "acceptance criteria feature test" do
-  it "passes the test" do
+  it "should pass the test" do
     expect do
     bank.credit(1000)
     bank.credit(2000)
