@@ -40,8 +40,7 @@ IRB output
 <img width="492" alt="Screenshot 2021-04-10 at 12 23 44" src="https://user-images.githubusercontent.com/76783075/114268164-a6d6d100-99f7-11eb-9207-6ca44cf600c6.png">
 
 RSPEC tests
-
-![image](https://user-images.githubusercontent.com/76783075/114299114-91be7880-9ab1-11eb-8b2b-8113ccffa246.png)
+<img width="492" alt="Screenshot 2021-04-10 at 12 23 44" src="https://user-images.githubusercontent.com/76783075/114299114-91be7880-9ab1-11eb-8b2b-8113ccffa246.png">
 
 ## User Stories
 
