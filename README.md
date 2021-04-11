@@ -2,7 +2,7 @@
 
 ## Project Description
 
-Makers 'Bank' tech test written in Ruby.
+Week 10 of Makers Academy, we have been challenged to submit a dummy tech test which requires the build of a basic bank account function purely in Ruby.
 
 ## Installation
 
@@ -45,6 +45,9 @@ RSPEC tests
 
 ## User Stories
 
+I wrote user stories based on the specification:
+
+```
 As a user with a bank account,<br>
 So that I can store my money,<br>
 I would like to be able to make deposits.
@@ -56,4 +59,7 @@ I would like to be able to make withdrawals.
 As a user with a bank account,<br>
 So that I can view my transactions and balance,<br>
 I would like to be able to print my bank statement.
+```
+## Design choices
 
+I initially used the gem 'HIRB' which automatically renders a neat table. However, feedback from a coach was that this was beyond the clients needs and to use manual formatting.
