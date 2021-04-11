@@ -63,3 +63,9 @@ I would like to be able to print my bank statement.
 ## Design choices
 
 I initially used the gem 'HIRB' which automatically renders a neat table. However, feedback from a coach was that this was beyond the clients needs and to use manual formatting.
+
+## Tech used
+
+- Ruby
+- Rspec
+- Rubocop
