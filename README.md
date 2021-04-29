@@ -48,16 +48,16 @@ RSPEC tests
 I wrote user stories based on the specification:
 
 ```
-As a user with a bank account,<br>
-So that I can store my money,<br>
+As a user with a bank account,
+So that I can store my money,
 I would like to be able to make deposits.
 
-As a user with a bank account,<br>
-So that I can access my money,<br>
+As a user with a bank account,
+So that I can access my money,
 I would like to be able to make withdrawals.
 
-As a user with a bank account,<br>
-So that I can view my transactions and balance,<br>
+As a user with a bank account,
+So that I can view my transactions and balance,
 I would like to be able to print my bank statement.
 ```
 ## Design choices
